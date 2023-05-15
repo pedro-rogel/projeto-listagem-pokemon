@@ -1,0 +1,131 @@
+body {
+    font-family: "Poppins", sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #9fe4f9;
+    color: #333333;
+}
+
+body.modo-escuro {
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botom {
+    width: 40px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botom-alterar-tempo {
+    background: none;
+    border: none;
+}
+
+header .logo:hover,
+header .imagem-botom:hover,
+main .cartao-pokemom:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+main .listagem-pokemom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-pokemom {
+    background-color: #77baf2;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: 0.2s ease-in-out;
+    border-radius: 15px;
+}
+
+main .cartao-pokemom:hover {
+    background-color: #f3fa7b;
+}
+
+.modo-escuro .cartao-pokemom {
+    background-color: #a8a8a8a8;
+}
+
+main .cartao-pokemom .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-pokemom .informacoes span {
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 17px;
+}
+
+main .cartao-pokemom .gif {
+    width: 90px;
+    height: 90px;
+}
+
+main .cartao-pokemom .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemom .tipos {
+    padding: 8px;
+}
+
+.tipo-grama {
+    background-color: #7ac74c;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.tipo-veneno {
+    background-color: #df67bdfb;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.tipo-fogo {
+    background-color: #ee8130;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.tipo-Água {
+    background-color: #6390f0;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.tipo-inseto {
+    background-color: #a6b91a;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
